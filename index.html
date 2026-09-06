@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>PRPulse.ai — Precision Hybrid Media Distribution</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+<html class="scroll-smooth" lang="pt"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>PRPulse.ai — Distribuição Híbrida de Mídia de Precisão</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
   @layer base {
     html, body { margin: 0; padding: 0; }
     body { overscroll-behavior: none; }
@@ -90,11 +90,33 @@
 
   /* Respect reduced motion preference */
   @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+
     *, ::before, ::after {
       animation-duration: 0.001ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.001ms !important;
+      animation-delay: 0ms !important;
     }
+
+    .animate-float-slow,
+    .animate-float-gentle,
+    .btn-pulse-glow,
+    .shimmer-badge::after,
+    .gradient-animated,
+    .text-shimmer,
+    .rainbow-border::before,
+    .interactive-card,
+    .interactive-card:hover,
+    .magnetic-hover,
+    .magnetic-hover:hover {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+    }
+
     .reveal-init {
       opacity: 1 !important;
       transform: none !important;
@@ -213,7 +235,7 @@
       }
     }
   }
-};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script><style>.vibrant-shadow{box-shadow:0 12px 40px -8px rgba(224,64,160,.35),0 4px 12px -4px rgba(124,82,170,.25)}.neon-glow{box-shadow:0 0 20px rgba(224,64,160,.4),0 0 40px rgba(124,82,170,.2)}.gradient-animated{background-size:200% 200%;background-image:linear-gradient(135deg,#e040a0,#7c52aa,#0096cc,#e040a0);animation:gradientShift 6s ease infinite}@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}.stat-number{background:-webkit-linear-gradient(135deg,#e040a0,#7c52aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800}.gsap-hidden{opacity:0;transform:translateY(30px)}.rainbow-border{position:relative}.rainbow-border::before{content:"";position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;background:linear-gradient(45deg,#e040a0,#7c52aa,#0096cc,#e040a0);background-size:400%;border-radius:inherit;z-index:-1;animation:rainbowMove 4s linear infinite;opacity:0;transition:opacity .3s}.rainbow-border:hover::before{opacity:1}.magnetic-hover{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}.magnetic-hover:hover{transform:scale(1.05) rotate(-1deg)}.text-shimmer{background:linear-gradient(90deg,#e040a0,#7c52aa,#0096cc,#e040a0);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:textShimmer 3s linear infinite}@keyframes rainbowMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes textShimmer{to{background-position:200% center}}</style></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/50 transition-all duration-300"><div class="max-w-container-max mx-auto px-gutter-desktop h-20 flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-xs shrink-0 group" data-path="platform-and-workflow" href="#"><div class="w-11 h-11 rounded-full bg-gradient-to-tr from-primary via-primary-container to-secondary flex items-center justify-center text-white shadow-md shadow-primary/25 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"><span class="material-symbols-outlined text-[24px]">cell_tower</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-extrabold group-hover:text-primary transition-colors">PRPulse</span><span class="font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-bold shadow-sm shimmer-badge">.ai</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide">Intelligence Wire</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="platform-and-workflow" href="#">Platform &amp; Workflow</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="media-network" href="#">Media Network</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="ai-human-synergy" href="#">AI + Human Synergy</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="service-tiers" href="#">Service Tiers</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="results" href="#">Results</a></nav><div class="flex items-center gap-space-sm shrink-0"><a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full border-2 border-primary/20 bg-surface-container-lowest font-label-lg text-label-lg text-on-surface hover:border-primary hover:text-primary hover:shadow-md transition-all duration-200 hover:-translate-y-0.5" data-path="book-consultation" href="#">Book Consultation</a><a class="inline-flex items-center justify-center px-space-lg py-2.5 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary font-label-lg text-label-lg text-white shadow-[0_6px_20px_rgba(224,64,160,0.35)] hover:shadow-[0_8px_25px_rgba(224,64,160,0.55)] hover:scale-105 active:scale-95 transition-all duration-200" data-path="get-started" href="#">Get Started Free</a><div class="w-9 h-9 rounded-full bg-primary-fixed text-primary flex items-center justify-center ml-space-2xs ring-2 ring-primary/20 hover:ring-primary hover:scale-110 transition-all cursor-pointer"><span class="material-symbols-outlined text-[20px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script><style>.vibrant-shadow{box-shadow:0 12px 40px -8px rgba(224,64,160,.35),0 4px 12px -4px rgba(124,82,170,.25)}.neon-glow{box-shadow:0 0 20px rgba(224,64,160,.4),0 0 40px rgba(124,82,170,.2)}.gradient-animated{background-size:200% 200%;background-image:linear-gradient(135deg,#e040a0,#7c52aa,#0096cc,#e040a0);animation:gradientShift 6s ease infinite}@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}.stat-number{background:-webkit-linear-gradient(135deg,#e040a0,#7c52aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800}.gsap-hidden{opacity:0;transform:translateY(30px)}.rainbow-border{position:relative}.rainbow-border::before{content:"";position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;background:linear-gradient(45deg,#e040a0,#7c52aa,#0096cc,#e040a0);background-size:400%;border-radius:inherit;z-index:-1;animation:rainbowMove 4s linear infinite;opacity:0;transition:opacity .3s}.rainbow-border:hover::before{opacity:1}.magnetic-hover{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}.magnetic-hover:hover{transform:scale(1.05) rotate(-1deg)}.text-shimmer{background:linear-gradient(90deg,#e040a0,#7c52aa,#0096cc,#e040a0);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:textShimmer 3s linear infinite}@keyframes rainbowMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes textShimmer{to{background-position:200% center}}</style></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/50 transition-all duration-300"><div class="max-w-container-max mx-auto px-gutter-desktop h-20 flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-xs shrink-0 group" data-path="platform-and-workflow" href="#"><div class="w-11 h-11 rounded-full bg-gradient-to-tr from-primary via-primary-container to-secondary flex items-center justify-center text-white shadow-md shadow-primary/25 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"><span class="material-symbols-outlined text-[24px]">cell_tower</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-extrabold group-hover:text-primary transition-colors">PRPulse</span><span class="font-label-sm text-label-sm uppercase px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-bold shadow-sm shimmer-badge">.ai</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide">Linha de Inteligência</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="platform-and-workflow" href="#">Plataforma e Fluxo de Trabalho</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="media-network" href="#">Rede de Mídia</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="ai-human-synergy" href="#">Sinergia IA + Humana</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="service-tiers" href="#">Planos de Serviço</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-200 font-medium" data-path="results" href="#">Resultados</a></nav><div class="flex items-center gap-space-sm shrink-0"><a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full border-2 border-primary/20 bg-surface-container-lowest font-label-lg text-label-lg text-on-surface hover:border-primary hover:text-primary hover:shadow-md transition-all duration-200 hover:-translate-y-0.5" data-path="book-consultation" href="#">Agendar Consultoria</a><a class="inline-flex items-center justify-center px-space-lg py-2.5 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary font-label-lg text-label-lg text-white shadow-[0_6px_20px_rgba(224,64,160,0.35)] hover:shadow-[0_8px_25px_rgba(224,64,160,0.55)] hover:scale-105 active:scale-95 transition-all duration-200" data-path="get-started" href="#">Começar Grátis</a><div class="w-9 h-9 rounded-full bg-primary-fixed text-primary flex items-center justify-center ml-space-2xs ring-2 ring-primary/20 hover:ring-primary hover:scale-110 transition-all cursor-pointer"><span class="material-symbols-outlined text-[20px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
 <!-- SECTION 1: HERO & REAL-TIME INTERACTIVE ENGINE -->
 <section class="relative w-full overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface pt-space-xl pb-space-3xl">
 <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[980px] h-[520px] bg-gradient-to-tr from-primary/40 via-secondary-container/50 to-tertiary-container/40 blur-3xl pointer-events-none rounded-full gradient-blob" style="animation:gradientShift 8s ease infinite, pulse 6s ease-in-out infinite;"></div>
@@ -222,32 +244,32 @@
 <div class="flex items-center justify-center gap-space-xs mb-space-md">
 <div class="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant shadow-sm border border-primary/10 shimmer-badge animate-float-gentle hover:scale-105 transition-transform cursor-default hero-badge">
 <span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Candy Syndication Protocol v4.8</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-extrabold">Protocolo de Sindicação Candy v4.8</span>
 </div>
 </div>
 <!-- Main Heading & Subtext -->
 <div class="text-center max-w-4xl mx-auto mb-space-2xl">
 <h1 class="font-display text-headline-xl md:text-display text-on-surface tracking-tight font-extrabold mb-space-md leading-tight">
-          Precision AI Speed. Senior Journalist Craft. <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">Guaranteed Media Reach.</span>
+          Velocidade de IA de Precisão. Ofício de Jornalista Sênior. <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">Alcance de Mídia Garantido.</span>
 </h1>
 <p class="font-body-xl text-body-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
-          Draft newsworthy press releases in 90 seconds with fine-tuned editorial models, refined and vetted by veteran PR strategists before syndicate release to 45,000+ verified reporters worldwide.
+          Crie comunicados de imprensa dignos de notícia em 90 segundos com modelos editoriais refinados, revisados e validados por estrategistas de RP veteranos antes da liberação para sindicação a mais de 45.000 repórteres verificados em todo o mundo.
         </p>
 <!-- CTA Action Hub -->
 <div class="flex flex-col sm:flex-row items-center justify-center gap-space-md mt-space-xl hero-cta">
 <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-label-lg text-label-lg shadow-xl shadow-primary/30 hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 active:scale-98 transition-all duration-300 group btn-pulse-glow" data-path="get-started" href="#">
-<span>Start AI Draft Free</span>
+<span>Começar Rascunho com IA Grátis</span>
 <span class="material-symbols-outlined text-[20px] group-hover:rotate-45 group-hover:scale-125 transition-transform duration-300">bolt</span>
 </a>
 <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-surface-container-lowest border-2 border-outline-variant/60 shadow-md text-on-surface font-label-lg text-label-lg hover:border-primary hover:text-primary hover:scale-105 hover:shadow-lg transition-all duration-300 group" data-path="book-consultation" href="#">
 <span class="material-symbols-outlined text-[20px] text-secondary group-hover:scale-110 group-hover:text-primary transition-all">calendar_today</span>
-<span>Schedule Strategic Consultation</span>
+<span>Agendar Consultoria Estratégica</span>
 </a>
 </div>
 <div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-space-lg mt-space-md text-on-surface-variant font-label-sm text-label-sm hero-trust">
-<span class="inline-flex items-center gap-1.5 transition-transform hover:scale-105 duration-200"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> No credit card required</span>
-<span class="inline-flex items-center gap-1.5 transition-transform hover:scale-105 duration-200"><span class="material-symbols-outlined text-primary text-[18px]">verified</span> 100% human editorial gate</span>
-<span class="inline-flex items-center gap-1.5 transition-transform hover:scale-105 duration-200"><span class="material-symbols-outlined text-primary text-[18px]">shield</span> AP Stylebook 2025 compliant</span>
+<span class="inline-flex items-center gap-1.5 transition-transform hover:scale-105 duration-200"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Sem necessidade de cartão de crédito</span>
+<span class="inline-flex items-center gap-1.5 transition-transform hover:scale-105 duration-200"><span class="material-symbols-outlined text-primary text-[18px]">verified</span> 100% de revisão editorial humana</span>
+<span class="inline-flex items-center gap-1.5 transition-transform hover:scale-105 duration-200"><span class="material-symbols-outlined text-primary text-[18px]">shield</span> Em conformidade com o Manual de Estilo AP 2025</span>
 </div>
 </div>
 <!-- Interactive Dual Pane: AI Synthesis vs. Human Oversight Mockup -->
@@ -262,8 +284,8 @@
 <span class="font-label-sm text-label-sm font-bold text-on-surface-variant ml-2 tracking-wide">PRP-LIVE-DISPATCH // ID: #8892-AP-TECH</span>
 </div>
 <div class="flex items-center gap-space-sm mt-2 sm:mt-0">
-<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold hover:bg-surface-variant transition-colors">Release: Embargo Lifted</span>
-<span class="px-3 py-1 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-label-sm text-label-sm font-bold shadow-sm shimmer-badge">Dual-Auth Pipeline Active</span>
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold hover:bg-surface-variant transition-colors">Comunicado: Embargo Liberado</span>
+<span class="px-3 py-1 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-label-sm text-label-sm font-bold shadow-sm shimmer-badge">Pipeline de Dupla Autenticação Ativo</span>
 </div>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
@@ -274,14 +296,14 @@
 <div class="w-9 h-9 rounded-full bg-primary-fixed text-primary flex items-center justify-center group-hover:rotate-12 transition-transform">
 <span class="material-symbols-outlined text-[22px]">smart_toy</span>
 </div>
-<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">AI Synthetic Engine</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Motor Sintético de IA</span>
 </div>
-<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">Trained on 500k+ Releases</span>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">Treinado em 500 mil+ Comunicados</span>
 </div>
 <!-- Metrics Matrix -->
 <div class="grid grid-cols-3 gap-space-xs mb-space-md">
 <div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-0.5 transition-all">
-<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Newsworthiness</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Valor Noticioso</div>
 <div class="font-headline-md text-headline-md font-extrabold text-primary flex items-baseline gap-1 mt-1">
 <span>96</span><span class="text-label-sm text-on-surface-variant">/100</span>
 </div>
@@ -290,7 +312,7 @@
 </div>
 </div>
 <div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-0.5 transition-all">
-<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Angle Depth</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Profundidade do Ângulo</div>
 <div class="font-headline-md text-headline-md font-extrabold text-secondary flex items-baseline gap-1 mt-1">
 <span>A+</span><span class="text-label-sm text-on-surface-variant">Apex</span>
 </div>
@@ -299,9 +321,9 @@
 </div>
 </div>
 <div class="bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm border border-surface-container hover:shadow-md hover:-translate-y-0.5 transition-all">
-<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">AP Syntax</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Sintaxe AP</div>
 <div class="font-headline-md text-headline-md font-extrabold text-tertiary flex items-baseline gap-1 mt-1">
-<span>99.8%</span>
+<span>99,8%</span>
 </div>
 <div class="w-full bg-surface-container h-2 rounded-full mt-2 overflow-hidden">
 <div class="bg-gradient-to-r from-tertiary to-tertiary-container h-full rounded-full transition-all duration-1000" style="width: 99%"></div>
@@ -312,24 +334,24 @@
 <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex-1 flex flex-col justify-between border border-surface-container">
 <div>
 <div class="flex items-center justify-between mb-2">
-<span class="font-label-sm text-label-sm font-extrabold text-primary uppercase tracking-wider">Generated Headline</span>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed/60 text-on-primary-fixed-variant font-bold shimmer-badge">CTR: 4.8x avg</span>
+<span class="font-label-sm text-label-sm font-extrabold text-primary uppercase tracking-wider">Manchete Gerada</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed/60 text-on-primary-fixed-variant font-bold shimmer-badge">CTR: 4,8x média</span>
 </div>
 <p class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs leading-snug hover:text-primary transition-colors cursor-text">
-                  AetherDynamics Secures $38M Series B to Accelerate Autonomous Edge Compute Protocols
+                  AetherDynamics Garante Rodada Série B de US$ 38M para Acelerar Protocolos Autônomos de Computação de Borda
                 </p>
 <div class="bg-surface-container-low p-space-sm rounded-2xl font-body-sm text-body-sm text-on-surface-variant mb-space-sm border border-outline-variant/30">
-<span class="font-bold text-primary">SAN FRANCISCO, CA — OCT 24, 2025</span> — AetherDynamics today unveiled its next-generation edge intelligence stack, demonstrating near-zero latency telemetry across distributed aerospace infrastructures.
+<span class="font-bold text-primary">SAN FRANCISCO, CA — 24 OUT 2025</span> — A AetherDynamics revelou hoje sua nova geração de pilha de inteligência de borda, demonstrando telemetria de latência quase zero em infraestruturas aeroespaciais distribuídas.
                 </div>
 <div class="flex flex-wrap gap-1.5">
-<span class="px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-bold hover:scale-105 transition-transform cursor-pointer">#VentureCapital</span>
-<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:scale-105 transition-transform cursor-pointer">#DeepTech</span>
-<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold hover:scale-105 transition-transform cursor-pointer">#EdgeComputing</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-bold hover:scale-105 transition-transform cursor-pointer">#CapitaldeRisco</span>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:scale-105 transition-transform cursor-pointer">#TecnologiaProfunda</span>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold hover:scale-105 transition-transform cursor-pointer">#ComputacaoDeBorda</span>
 </div>
 </div>
 <div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant border-t border-surface-container">
-<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span> Model: LLM-PR-90b</span>
-<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">Lat: 1.2s</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span> Modelo: LLM-PR-90b</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">Lat: 1,2s</span>
 </div>
 </div>
 </div>
@@ -340,11 +362,11 @@
 <div class="w-9 h-9 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
 <span class="material-symbols-outlined text-[22px]">verified_user</span>
 </div>
-<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Senior Editorial Desk</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Mesa Editorial Sênior</span>
 </div>
 <div class="flex items-center gap-2">
 <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
-<span class="font-label-sm text-label-sm text-primary font-extrabold">Review Complete</span>
+<span class="font-label-sm text-label-sm text-primary font-extrabold">Revisão Concluída</span>
 </div>
 </div>
 <!-- Reviewer Bio & Approval Badge -->
@@ -353,47 +375,47 @@
 <img class="w-11 h-11 rounded-full object-cover shadow ring-2 ring-primary/30 hover:scale-105 transition-transform" data-alt="Close up editorial portrait of senior tech media editor with glasses and navy blazer in modern newsroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAxBGb03m_IiXWB3A7_mEl8zqjK6pNkX5S3-WlQV3sc8L4hQ4kZr693AfQcj2jqCUmKCyPWMaiNib10o8y1oQMaqORWoncjugVqosyWbwsUKGOgZhKHQoY74X5DS_wT_gZEa7NU6Ld2DrsY-tfaCZgNWdBWS_XKnJAhmb-kv_AWGWhFdwQQumHbejNMdul2TBoBWwcfuT6tgHFQnnd4ehN2NzEaeFA-kOQo9kdIYBMOdYfOPd8oNz8Gg"/>
 <div>
 <div class="font-label-lg text-label-lg font-extrabold text-on-surface">Marcus Vance</div>
-<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Former Deputy Editor, TechCrunch (12 yrs exp.)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">Ex-Vice Editor, TechCrunch (12 anos de experiência)</div>
 </div>
 </div>
 <div class="bg-gradient-to-r from-primary to-secondary text-white px-3.5 py-1.5 rounded-full font-label-sm text-label-sm flex items-center gap-1 font-extrabold shadow-md shimmer-badge">
 <span class="material-symbols-outlined text-[16px]">done_all</span>
-<span>Certified for Wire</span>
+<span>Certificado para Distribuição</span>
 </div>
 </div>
 <!-- Human Tracked Changes & Pitch Angles -->
 <div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex-1 flex flex-col justify-between border border-surface-container">
 <div>
-<div class="font-label-sm text-label-sm font-extrabold text-primary uppercase tracking-wider mb-2">Editorial Precision Layer (Diff)</div>
+<div class="font-label-sm text-label-sm font-extrabold text-primary uppercase tracking-wider mb-2">Camada de Precisão Editorial (Diff)</div>
 <div class="bg-surface-container-low/80 p-space-sm rounded-2xl text-body-sm font-body-sm text-on-surface mb-space-sm border border-outline-variant/30 transition-all hover:bg-surface-container-low">
-<span class="line-through text-on-surface-variant opacity-60">"The round was spearheaded by leading tech visionaries"</span>
-<span class="bg-primary-fixed font-bold px-2 py-0.5 rounded-full text-on-primary-fixed-variant">→ "Led by Horizon Ventures, with follow-on allocations from Lux Capital and Apex Scale Partners."</span>
-<p class="mt-2 text-on-surface-variant italic font-label-sm text-label-sm">Marcus V. note: "Journalists dismiss ambiguous 'visionaries'. Concrete firm attribution triggers instant alert keywords in Tier-1 terminals."</p>
+<span class="line-through text-on-surface-variant opacity-60">"A rodada foi liderada por visionários líderes da tecnologia"</span>
+<span class="bg-primary-fixed font-bold px-2 py-0.5 rounded-full text-on-primary-fixed-variant">→ "Liderada pela Horizon Ventures, com aportes subsequentes da Lux Capital e Apex Scale Partners."</span>
+<p class="mt-2 text-on-surface-variant italic font-label-sm text-label-sm">Nota de Marcus V.: "Os jornalistas descartam 'visionários' ambíguos. A atribuição concreta de empresas aciona palavras-chave de alerta instantâneas em terminais Tier-1."</p>
 </div>
-<div class="font-label-sm text-label-sm font-extrabold text-on-surface uppercase tracking-wider mb-1.5">Dedicated Media Desk Match</div>
+<div class="font-label-sm text-label-sm font-extrabold text-on-surface uppercase tracking-wider mb-1.5">Correspondência Dedicada de Mesa de Mídia</div>
 <div class="grid grid-cols-2 gap-2 mt-1">
 <div class="p-2.5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-primary-fixed/30 hover:scale-[1.02] transition-all cursor-pointer">
 <span class="font-label-sm text-label-sm font-bold text-on-surface">Bloomberg Tech</span>
-<span class="text-label-sm text-primary font-bold px-2 py-0.5 rounded-full bg-primary-fixed/60">Priority Beat 1</span>
+<span class="text-label-sm text-primary font-bold px-2 py-0.5 rounded-full bg-primary-fixed/60">Pauta Prioritária 1</span>
 </div>
 <div class="p-2.5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-secondary-fixed/50 hover:scale-[1.02] transition-all cursor-pointer">
 <span class="font-label-sm text-label-sm font-bold text-on-surface">TechCrunch VC</span>
-<span class="text-label-sm text-secondary font-bold px-2 py-0.5 rounded-full bg-secondary-fixed">Direct Pitch</span>
+<span class="text-label-sm text-secondary font-bold px-2 py-0.5 rounded-full bg-secondary-fixed">Abordagem Direta</span>
 </div>
 <div class="p-2.5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-tertiary-fixed/50 hover:scale-[1.02] transition-all cursor-pointer">
 <span class="font-label-sm text-label-sm font-bold text-on-surface">Forbes Innovation</span>
-<span class="text-label-sm text-tertiary font-bold px-2 py-0.5 rounded-full bg-tertiary-fixed">Exclusive Hook</span>
+<span class="text-label-sm text-tertiary font-bold px-2 py-0.5 rounded-full bg-tertiary-fixed">Gancho Exclusivo</span>
 </div>
 <div class="p-2.5 rounded-2xl bg-surface-container flex items-center justify-between hover:bg-primary-fixed/30 hover:scale-[1.02] transition-all cursor-pointer">
 <span class="font-label-sm text-label-sm font-bold text-on-surface">Reuters Tech Wire</span>
-<span class="text-label-sm text-primary font-bold px-2 py-0.5 rounded-full bg-primary-fixed/60">Wire Syndicate</span>
+<span class="text-label-sm text-primary font-bold px-2 py-0.5 rounded-full bg-primary-fixed/60">Sindicação de Fio</span>
 </div>
 </div>
 </div>
 <div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm border-t border-surface-container">
-<span class="text-on-surface-variant">Editorial Turnaround: <strong class="text-primary font-extrabold">18 Minutes</strong></span>
+<span class="text-on-surface-variant">Prazo Editorial: <strong class="text-primary font-extrabold">18 Minutos</strong></span>
 <span class="text-primary font-extrabold inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/50 hover:bg-primary hover:text-white transition-all duration-200 cursor-pointer">
-                  Ready to Dispatch <span class="material-symbols-outlined text-[16px]">send</span>
+                  Pronto para Envio <span class="material-symbols-outlined text-[16px]">send</span>
 </span>
 </div>
 </div>
@@ -403,7 +425,7 @@
 <!-- Syndication Newsrooms Logo Scrim -->
 <div class="mt-space-2xl text-center">
 <p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-extrabold mb-space-md">
-          Syndicated and pitched directly into premier global newsrooms &amp; financial terminals
+          Sindicação e abordagem direta nas principais redações globais e terminais financeiros
         </p>
 <div class="flex flex-wrap items-center justify-center gap-space-lg md:gap-space-xl opacity-75">
 <span class="font-display text-headline-sm font-extrabold tracking-tighter text-on-surface hover:text-primary hover:scale-110 transition-all cursor-pointer">Bloomberg</span>
@@ -422,11 +444,11 @@
 <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
 <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md reveal-on-scroll">
 <div>
-<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-extrabold uppercase tracking-wider shimmer-badge">Candy Precision Protocol</span>
-<h2 class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-2 tracking-tight">The 4-Phase AI-Human Pipeline</h2>
+<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-extrabold uppercase tracking-wider shimmer-badge">Protocolo de Precisão Candy</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-2 tracking-tight">O Pipeline IA-Humano de 4 Fases</h2>
 </div>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed">
-          How algorithmic synthesis merges with tier-1 media editorial rigor to turn announcements into high-impact coverage.
+          Como a síntese algorítmica se une ao rigor editorial da mídia Tier-1 para transformar anúncios em cobertura de alto impacto.
         </p>
 </div>
 <!-- Step Cards Grid -->
@@ -436,19 +458,19 @@
 <div>
 <div class="flex items-center justify-between mb-space-md">
 <span class="w-12 h-12 rounded-full bg-gradient-to-tr from-primary to-primary-container text-white font-headline-sm text-headline-sm font-extrabold flex items-center justify-center shadow-md shadow-primary/30 group-hover:scale-110 group-hover:rotate-6 transition-transform">01</span>
-<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold group-hover:bg-primary-fixed transition-colors">90s Execution</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold group-hover:bg-primary-fixed transition-colors">Execução em 90s</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Intelligent Angle Mining</h3>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Mineração Inteligente de Ângulos</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              AI scans internal release notes, patents, deck summaries, and funding memos. Automatically detects high-yield angles tailored for tech, venture, or consumer newsdesks.
+              A IA analisa notas internas de comunicados, patentes, resumos de apresentações e memorandos de financiamento. Detecta automaticamente ângulos de alto rendimento sob medida para redações de tecnologia, venture capital ou consumo.
             </p>
 </div>
 <div class="p-space-xs px-3 py-2 rounded-2xl bg-surface-container-low border border-primary-fixed group-hover:bg-primary-fixed/20 transition-colors">
 <div class="flex items-center gap-1.5 font-label-sm text-label-sm font-extrabold text-primary">
 <span class="material-symbols-outlined text-[16px]">memory</span>
-<span>Proprietary Angle Parser</span>
+<span>Analisador de Ângulos Proprietário</span>
 </div>
-<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Multi-perspective hook extraction</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Extração de ganchos multi-perspectiva</div>
 </div>
 </div>
 <!-- Step 2 -->
@@ -456,19 +478,19 @@
 <div>
 <div class="flex items-center justify-between mb-space-md">
 <span class="w-12 h-12 rounded-full bg-gradient-to-tr from-secondary to-secondary-fixed-dim text-white font-headline-sm text-headline-sm font-extrabold flex items-center justify-center shadow-md shadow-secondary/30 group-hover:scale-110 group-hover:rotate-6 transition-transform">02</span>
-<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">AP Compliant</span>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Conforme AP</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-secondary transition-colors">Deep-Tuned PR Draft</h3>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-secondary transition-colors">Rascunho de RP Refinado</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              Synthesizes official quotes, verifiable market statistics, and executive media boilerplate. Structured according to strict international newswire publishing criteria.
+              Sintetiza citações oficiais, estatísticas de mercado verificáveis e textos padrão da mídia executiva. Estruturado de acordo com rigorosos critérios internacionais de publicação em fios de notícias.
             </p>
 </div>
 <div class="p-space-xs px-3 py-2 rounded-2xl bg-surface-container-low border border-secondary-fixed group-hover:bg-secondary-fixed/20 transition-colors">
 <div class="flex items-center gap-1.5 font-label-sm text-label-sm font-extrabold text-secondary">
 <span class="material-symbols-outlined text-[16px]">psychology</span>
-<span>500k Historical Corpus</span>
+<span>Corpus Histórico de 500 mil</span>
 </div>
-<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Zero generative hallucination filter</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Filtro zero de alucinação generativa</div>
 </div>
 </div>
 <!-- Step 3 -->
@@ -476,19 +498,19 @@
 <div>
 <div class="flex items-center justify-between mb-space-md">
 <span class="w-12 h-12 rounded-full bg-gradient-to-tr from-tertiary to-tertiary-container text-white font-headline-sm text-headline-sm font-extrabold flex items-center justify-center shadow-md shadow-tertiary/30 group-hover:scale-110 group-hover:rotate-6 transition-transform">03</span>
-<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Human Proofed</span>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Revisado por Humano</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-tertiary transition-colors">Journalist Polish &amp; Audit</h3>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-tertiary transition-colors">Polimento e Auditoria de Jornalista</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              Former national news editors review facts, tune sensitive quotes, calibrate embargo parameters, and tailor personalized email pitches for premier beat reporters.
+              Ex-editores de notícias nacionais revisam fatos, ajustam citações sensíveis, calibram parâmetros de embargo e personalizam pitches por e-mail para repórteres de pauta de elite.
             </p>
 </div>
 <div class="p-space-xs px-3 py-2 rounded-2xl bg-surface-container-low border border-tertiary-fixed group-hover:bg-tertiary-fixed/20 transition-colors">
 <div class="flex items-center gap-1.5 font-label-sm text-label-sm font-extrabold text-tertiary">
 <span class="material-symbols-outlined text-[16px]">rate_review</span>
-<span>Veteran PR Directors</span>
+<span>Diretores de RP Veteranos</span>
 </div>
-<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">100% human-verified signoff</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Aprovação 100% verificada por humanos</div>
 </div>
 </div>
 <!-- Step 4 -->
@@ -496,19 +518,19 @@
 <div>
 <div class="flex items-center justify-between mb-space-md">
 <span class="w-12 h-12 rounded-full bg-gradient-to-tr from-primary via-secondary to-tertiary text-white font-headline-sm text-headline-sm font-extrabold flex items-center justify-center shadow-md shadow-primary/30 group-hover:scale-110 group-hover:rotate-6 transition-transform">04</span>
-<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Live Wires</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Fios ao Vivo</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Algorithmic Syndication</h3>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Sindicação Algorítmica</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              Simultaneous distribution through global newswires and direct 1-to-1 inbox delivery to journalists actively publishing on your specific sub-beat right now.
+              Distribuição simultânea por fios de notícias globais e entrega direta 1-a-1 na caixa de entrada de jornalistas que publicam ativamente na sua sub-pauta específica agora.
             </p>
 </div>
 <div class="p-space-xs px-3 py-2 rounded-2xl bg-surface-container-low border border-primary-fixed group-hover:bg-primary-fixed/20 transition-colors">
 <div class="flex items-center gap-1.5 font-label-sm text-label-sm font-extrabold text-primary">
 <span class="material-symbols-outlined text-[16px]">cell_tower</span>
-<span>45,000+ Active Beats</span>
+<span>Mais de 45.000 Pautas Ativas</span>
 </div>
-<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Real-time open &amp; pick-up tracking</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Rastreamento em tempo real de aberturas e captações</div>
 </div>
 </div>
 </div>
@@ -517,26 +539,26 @@
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
 <div class="lg:col-span-7">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-extrabold mb-space-xs shimmer-badge">
-<span>Why Hybrid Beats 100% AI</span>
+<span>Por que o Híbrido Supera 100% IA</span>
 </div>
 <h3 class="font-headline-lg text-headline-lg text-on-surface font-extrabold mb-space-sm">
-              "AI writes fast. But journalists only open pitches from sources they trust."
+              "A IA escreve rápido. Mas jornalistas só abrem pitches de fontes em que confiam."
             </h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
-              Reporters receive 200+ generic automated PR pitches every morning. PRPulse filters your story through former newsroom gatekeepers who know precisely which phrase structures, subject lines, and reference data pass editorial sniff-tests.
+              Repórteres recebem mais de 200 pitches de RP automatizados genéricos toda manhã. O PRPulse filtra sua história por ex-guardiões de redação que sabem exatamente quais estruturas de frases, linhas de assunto e dados de referência passam nos testes editoriais.
             </p>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm">
 <div class="p-space-sm rounded-2xl bg-surface-container-low border border-primary-fixed/40 hover:scale-105 transition-transform duration-200 cursor-default">
-<div class="font-headline-sm text-headline-sm font-extrabold text-primary">3.4x</div>
-<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Higher Reporter Reply Rate</div>
+<div class="font-headline-sm text-headline-sm font-extrabold text-primary">3,4x</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Maior Taxa de Resposta de Repórteres</div>
 </div>
 <div class="p-space-sm rounded-2xl bg-surface-container-low border border-secondary-fixed/50 hover:scale-105 transition-transform duration-200 cursor-default">
 <div class="font-headline-sm text-headline-sm font-extrabold text-secondary">0%</div>
-<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Spam Filter Triggers</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Acionamentos de Filtro de Spam</div>
 </div>
 <div class="p-space-sm rounded-2xl bg-surface-container-low border border-tertiary-fixed hover:scale-105 transition-transform duration-200 cursor-default">
-<div class="font-headline-sm text-headline-sm font-extrabold text-tertiary">&lt; 4.2h</div>
-<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Draft to Final Release</div>
+<div class="font-headline-sm text-headline-sm font-extrabold text-tertiary">&lt; 4,2h</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Do Rascunho ao Comunicado Final</div>
 </div>
 </div>
 </div>
@@ -546,10 +568,10 @@
 </div>
 <div class="absolute bottom-4 left-4 right-4 bg-inverse-surface/95 backdrop-blur-md p-space-sm rounded-2xl text-inverse-on-surface shadow-xl border border-primary-fixed/30 animate-float-gentle">
 <div class="flex items-center justify-between mb-1">
-<span class="font-label-sm text-label-sm font-extrabold uppercase text-primary-fixed">Live Wire Signal</span>
-<span class="font-label-sm text-label-sm text-secondary-fixed font-bold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span> 14 Pickups in 22 min</span>
+<span class="font-label-sm text-label-sm font-extrabold uppercase text-primary-fixed">Sinal de Fio ao Vivo</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span> 14 Captações em 22 min</span>
 </div>
-<p class="font-label-sm text-label-sm truncate">"Exclusive interview requested by WSJ Financial Markets reporter"</p>
+<p class="font-label-sm text-label-sm truncate">"Entrevista exclusiva solicitada por repórter do WSJ Financial Markets"</p>
 </div>
 </div>
 </div>
@@ -560,19 +582,19 @@
 <section class="w-full bg-surface py-space-3xl">
 <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
 <div class="text-center max-w-3xl mx-auto mb-space-xl reveal-on-scroll">
-<span class="px-4 py-1.5 rounded-full bg-primary-fixed font-label-sm text-label-sm font-extrabold uppercase tracking-wider text-on-primary-fixed-variant shimmer-badge">Syndication Architecture</span>
-<h2 class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-2 tracking-tight">Worldwide Journalist Network &amp; Distribution Power</h2>
+<span class="px-4 py-1.5 rounded-full bg-primary-fixed font-label-sm text-label-sm font-extrabold uppercase tracking-wider text-on-primary-fixed-variant shimmer-badge">Arquitetura de Sindicação</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-2 tracking-tight">Rede Mundial de Jornalistas e Poder de Distribuição</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
-          Connect seamlessly to institutional wire feeds, specialized vertical trades, and thousands of active reporters.
+          Conecte-se perfeitamente a feeds institucionais de fios, veículos especializados de nicho e milhares de repórteres ativos.
         </p>
 </div>
 <!-- Category Filter Pills (Micro-Interactions) -->
 <div class="flex flex-wrap items-center justify-center gap-2 mb-space-xl" id="category-filter-bar">
-<button class="filter-pill active px-5 py-2.5 rounded-full bg-primary text-white font-label-md text-label-md font-extrabold shadow-md shadow-primary/25 cursor-pointer transition-all hover:scale-105 active:scale-95" data-vertical="all">All Verticals</button>
-<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="tech">Tech &amp; Artificial Intelligence</button>
-<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="fintech">Venture Capital &amp; FinTech</button>
-<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="healthcare">Healthcare &amp; BioTech</button>
-<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="cloud">Enterprise Cloud &amp; SaaS</button>
+<button class="filter-pill active px-5 py-2.5 rounded-full bg-primary text-white font-label-md text-label-md font-extrabold shadow-md shadow-primary/25 cursor-pointer transition-all hover:scale-105 active:scale-95" data-vertical="all">Todos os Segmentos</button>
+<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="tech">Tecnologia e Inteligência Artificial</button>
+<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="fintech">Capital de Risco e FinTech</button>
+<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="healthcare">Saúde e Biotecnologia</button>
+<button class="filter-pill px-5 py-2.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface font-label-md text-label-md font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer" data-vertical="cloud">Nuvem Corporativa e SaaS</button>
 </div>
 <!-- 4 Core Capabilities Bento Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg">
@@ -582,22 +604,22 @@
 <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-sm group-hover:scale-110 group-hover:rotate-6 transition-all">
 <span class="material-symbols-outlined text-[28px]">hub</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Tier-1 Global Newswire Syndication</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Sindicação Global em Fio de Notícias Tier-1</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
-              Every release reaches guaranteed indexed distribution across Google News, Apple News, Bloomberg Terminals, Yahoo Finance, Dow Jones Factiva, and LexisNexis. Immediate indexation preserves search authority and institutional footprint.
+              Cada comunicado alcança distribuição indexada garantida em Google News, Apple News, Terminais Bloomberg, Yahoo Finance, Dow Jones Factiva e LexisNexis. A indexação imediata preserva a autoridade de busca e a presença institucional.
             </p>
 </div>
 <div class="p-space-md rounded-2xl bg-surface-container-low border border-primary-fixed">
 <div class="flex items-center justify-between text-label-sm font-label-sm font-extrabold text-on-surface mb-2">
-<span>Indexed Network Reach</span>
-<span class="text-primary font-extrabold" id="outlet-count-display">420+ Major Outlets</span>
+<span>Alcance da Rede Indexada</span>
+<span class="text-primary font-extrabold" id="outlet-count-display">Mais de 420 Veículos Principais</span>
 </div>
 <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
 <div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full transition-all duration-700" id="network-progress-bar" style="width: 88%"></div>
 </div>
 <div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mt-2 font-medium">
-<span>Search Engine Optimization</span>
-<span class="text-primary font-bold">100% Guaranteed DoFollow / Citation Authority</span>
+<span>Otimização de Mecanismos de Busca</span>
+<span class="text-primary font-bold">100% de DoFollow Garantido / Autoridade de Citação</span>
 </div>
 </div>
 </div>
@@ -607,19 +629,19 @@
 <div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md shadow-sm group-hover:scale-110 group-hover:rotate-6 transition-all">
 <span class="material-symbols-outlined text-[28px]">contact_mail</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-secondary transition-colors">45,000+ Direct Journalist Desk</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-secondary transition-colors">Mais de 45.000 Jornalistas em Mesa Direta</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              Proprietary email delivery system that matches press releases to reporters who covered related stories within the past 14 days. No bulk spam—only contextually targeted, personalized one-to-one pitches.
+              Sistema proprietário de entrega por e-mail que combina comunicados de imprensa a repórteres que cobriram histórias relacionadas nos últimos 14 dias. Sem spam em massa — apenas pitches contextuais e personalizados, um a um.
             </p>
 </div>
 <div class="space-y-2" id="beat-list-container">
 <div class="flex items-center justify-between p-3 rounded-2xl bg-surface-container font-label-sm text-label-sm hover:bg-surface-variant transition-colors">
-<span class="font-extrabold text-on-surface" id="desk-row-1-title">Silicon Valley / AI Beat</span>
-<span class="text-primary font-bold px-2.5 py-0.5 rounded-full bg-primary-fixed/60" id="desk-row-1-count">12,400 Verified Inboxes</span>
+<span class="font-extrabold text-on-surface" id="desk-row-1-title">Vale do Silício / Pauta de IA</span>
+<span class="text-primary font-bold px-2.5 py-0.5 rounded-full bg-primary-fixed/60" id="desk-row-1-count">12.400 Caixas Verificadas</span>
 </div>
 <div class="flex items-center justify-between p-3 rounded-2xl bg-surface-container font-label-sm text-label-sm hover:bg-surface-variant transition-colors">
-<span class="font-extrabold text-on-surface" id="desk-row-2-title">Fintech &amp; Crypto Markets</span>
-<span class="text-secondary font-bold px-2.5 py-0.5 rounded-full bg-secondary-fixed" id="desk-row-2-count">8,900 Verified Inboxes</span>
+<span class="font-extrabold text-on-surface" id="desk-row-2-title">Mercados Fintech e Cripto</span>
+<span class="text-secondary font-bold px-2.5 py-0.5 rounded-full bg-secondary-fixed" id="desk-row-2-count">8.900 Caixas Verificadas</span>
 </div>
 </div>
 </div>
@@ -629,14 +651,14 @@
 <div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-sm group-hover:scale-110 group-hover:rotate-6 transition-all">
 <span class="material-symbols-outlined text-[28px]">lock_clock</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-tertiary transition-colors">Embargo &amp; Secure Media Rooms</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-tertiary transition-colors">Salas de Imprensa Seguras e Embargo</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              Interactive cloud press rooms with gated high-res executive assets, video b-roll, whitepapers, and dynamic NDA click-wrap agreements for confidential corporate announcements.
+              Salas de imprensa interativas em nuvem com ativos executivos de alta resolução protegidos, vídeos B-roll, whitepapers e acordos de NDA dinâmicos para anúncios corporativos confidenciais.
             </p>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm p-3 rounded-2xl bg-surface-container-low border border-tertiary-fixed hover:bg-tertiary-fixed/20 transition-colors">
 <span class="material-symbols-outlined text-[20px] text-tertiary">encrypted</span>
-<span>Single-use time-decay download links for PR embargo security</span>
+<span>Links de download de uso único com expiração para segurança de embargo de RP</span>
 </div>
 </div>
 <!-- Capability 4 -->
@@ -645,16 +667,16 @@
 <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-sm group-hover:scale-110 group-hover:rotate-6 transition-all">
 <span class="material-symbols-outlined text-[28px]">analytics</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Real-Time Clipping &amp; Sentiment Intelligence</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-xs group-hover:text-primary transition-colors">Inteligência de Clipping e Sentimento em Tempo Real</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
-              Automated post-launch telemetry detects pickups across news, social sentiment shifts, organic backlink accumulation, and executive share of voice versus key competitors.
+              Telemetria automatizada pós-lançamento detecta captações em notícias, mudanças de sentimento social, acúmulo orgânico de backlinks e participação executiva de voz versus concorrentes-chave.
             </p>
 </div>
 <!-- Mini Live Analytics Chart Mockup -->
 <div class="p-space-md rounded-2xl bg-surface-container-low border border-primary-fixed">
 <div class="flex items-center justify-between mb-2">
-<span class="font-label-sm text-label-sm font-extrabold text-on-surface uppercase">24-Hour Syndication Velocity</span>
-<span class="font-label-sm text-label-sm text-primary font-extrabold px-2.5 py-0.5 rounded-full bg-primary-fixed shimmer-badge">+184% Over Baseline</span>
+<span class="font-label-sm text-label-sm font-extrabold text-on-surface uppercase">Velocidade de Sindicação em 24 Horas</span>
+<span class="font-label-sm text-label-sm text-primary font-extrabold px-2.5 py-0.5 rounded-full bg-primary-fixed shimmer-badge">+184% Acima da Base</span>
 </div>
 <div class="flex items-end gap-2 h-16 pt-2 group/chart cursor-pointer">
 <div class="flex-1 bg-surface-container rounded-full h-4 hover:h-8 hover:bg-primary transition-all duration-300"></div>
@@ -675,19 +697,19 @@
 <section class="w-full bg-surface-container-low py-space-3xl" id="pricing-section">
 <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
 <div class="text-center max-w-3xl mx-auto mb-space-xl reveal-on-scroll">
-<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-extrabold uppercase tracking-wider shimmer-badge">Predictable Investment</span>
-<h2 class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-2 tracking-tight">Enterprise PR Without The $25k/mo Agency Lock-in</h2>
+<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-extrabold uppercase tracking-wider shimmer-badge">Investimento Previsível</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-extrabold mt-2 tracking-tight">RP Corporativa com I.A, mas com revisão e relacionamento humano com os principais veículos</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
-          Transparent, pay-per-release or flexible monthly retainers with guaranteed editorial oversight.
+          Transparente, pagamento por comunicado ou retenções mensais flexíveis com supervisão editorial garantida.
         </p>
 <!-- Pricing Toggle -->
 <div class="inline-flex items-center p-1.5 rounded-full bg-surface-container-lowest shadow-md mt-space-md border border-outline-variant/40 hover:shadow-lg transition-shadow">
 <button class="px-space-md py-2 rounded-full bg-primary text-white font-label-md text-label-md font-extrabold transition-all duration-300 shadow-sm cursor-pointer" id="btn-per-release">
-            Per-Release Dispatch
+            Envio por Comunicado
           </button>
 <button class="px-space-md py-2 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all duration-300 flex items-center gap-1.5 font-bold cursor-pointer" id="btn-retainer">
-<span>Monthly Retainer</span>
-<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-extrabold shimmer-badge">Save 20%</span>
+<span>Retenção Mensal</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-extrabold shimmer-badge">Economize 20%</span>
 </button>
 </div>
 </div>
@@ -698,126 +720,126 @@
 <div>
 <div class="flex justify-between items-center mb-space-xs">
 <span class="font-headline-sm text-headline-sm font-extrabold text-on-surface group-hover:text-primary transition-colors">AI Starter</span>
-<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-bold">Fast-Track</span>
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-bold">Rápido</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              For early-stage startups and rapid updates needing automated AP-style drafting and regional newswire distribution.
+              Para startups em estágio inicial e atualizações rápidas que precisam de redação automatizada em estilo AP e distribuição regional em fios de notícias.
             </p>
 <div class="flex items-baseline gap-1 mb-space-lg">
 <span class="font-display text-headline-xl font-extrabold text-on-surface transition-all duration-300" id="price-starter">$299</span>
-<span class="text-on-surface-variant font-body-md font-medium transition-all duration-300" id="period-starter">/ single release</span>
+<span class="text-on-surface-variant font-body-md font-medium transition-all duration-300" id="period-starter">/ comunicado único</span>
 </div>
 <div class="space-y-3 font-body-md text-body-md text-on-surface mb-space-lg">
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check</span>
-<span>Sub-90-second AI draft generation with 3 angle variations</span>
+<span>Geração de rascunho com IA em menos de 90 segundos com 3 variações de ângulo</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check</span>
-<span>AP Stylebook compliance engine automated check</span>
+<span>Verificação automatizada de conformidade com o Manual de Estilo AP</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check</span>
-<span>Syndication to 75+ regional news outlets &amp; Google News</span>
+<span>Sindicação a mais de 75 veículos de notícias regionais e Google News</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check</span>
-<span>Full clipping PDF report with backlinks</span>
+<span>Relatório PDF completo de clipping com backlinks</span>
 </div>
 <div class="flex items-start gap-2 text-on-surface-variant/50">
 <span class="material-symbols-outlined text-[20px] shrink-0">close</span>
-<span>Senior PR Director manual rewrite</span>
+<span>Reescrita manual por Diretor Sênior de RP</span>
 </div>
 </div>
 </div>
 <a class="w-full py-3.5 rounded-full bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed font-label-lg text-label-lg font-extrabold text-center transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95" data-path="get-started" href="#">
-            Select Starter Plan
+            Selecionar Plano Starter
           </a>
 </div>
 <!-- Tier 2: Hybrid Pro (Most Popular) -->
 <div class="bg-surface-container-lowest p-space-xl rounded-3xl shadow-2xl relative flex flex-col justify-between transform lg:-translate-y-2 border-2 border-primary ring-4 ring-primary-fixed/40 interactive-card reveal-on-scroll group" style="transition-delay: 150ms;">
 <!-- Top badge -->
 <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-space-md py-1 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-label-sm text-label-sm font-extrabold shadow-md uppercase tracking-wider shimmer-badge">
-            Most Popular Choice
+            Escolha Mais Popular
           </div>
 <div>
 <div class="flex justify-between items-center mb-space-xs mt-2">
 <span class="font-headline-sm text-headline-sm font-extrabold text-on-surface group-hover:text-primary transition-colors">Hybrid Pro</span>
-<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">AI + Human Desk</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">Mesa IA + Humana</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              Our flagship model: Instant AI draft refined by a former national newsroom journalist, with direct pitches to 250 beat reporters.
+              Nosso modelo principal: rascunho instantâneo de IA refinado por um ex-jornalista de redação nacional, com pitches diretos a 250 repórteres de pauta.
             </p>
 <div class="flex items-baseline gap-1 mb-space-lg">
 <span class="font-display text-headline-xl font-extrabold text-primary transition-all duration-300" id="price-pro">$799</span>
-<span class="text-on-surface-variant font-body-md font-medium transition-all duration-300" id="period-pro">/ single release</span>
+<span class="text-on-surface-variant font-body-md font-medium transition-all duration-300" id="period-pro">/ comunicado único</span>
 </div>
 <div class="space-y-3 font-body-md text-body-md text-on-surface mb-space-lg">
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span><strong>Dedicated Senior PR Director</strong> manual editorial edit</span>
+<span><strong>Edição editorial manual por Diretor Sênior de RP dedicado</strong></span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span><strong>Direct 1-to-1 inbox pitches</strong> to 250 verified beat journalists</span>
+<span><strong>Pitches diretos 1-a-1 na caixa de entrada</strong> para 250 jornalistas de pauta verificados</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span>Guaranteed minimum <strong>150+ news pickups</strong> (Yahoo, AP, etc.)</span>
+<span>Mínimo garantido de <strong>150+ captações de notícias</strong> (Yahoo, AP, etc.)</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span>Secure Media Embargo room with asset hosting</span>
+<span>Sala de embargo de mídia segura com hospedagem de ativos</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span>Real-time email open and journalist click notifications</span>
+<span>Notificações em tempo real de abertura de e-mail e cliques de jornalistas</span>
 </div>
 </div>
 </div>
 <a class="w-full py-4 rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary hover:to-primary-container text-white font-label-lg text-label-lg font-extrabold text-center shadow-lg shadow-primary/30 hover:scale-105 active:scale-95 transition-all duration-200 btn-pulse-glow" data-path="get-started" href="#">
-            Launch Hybrid Campaign
+            Lançar Campanha Híbrida
           </a>
 </div>
 <!-- Tier 3: Enterprise Syndicate -->
 <div class="bg-surface-container-lowest p-space-xl rounded-3xl shadow-sm interactive-card flex flex-col justify-between border-2 border-outline-variant/40 reveal-on-scroll group hover:border-secondary/60" style="transition-delay: 250ms;">
 <div>
 <div class="flex justify-between items-center mb-space-xs">
-<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface group-hover:text-secondary transition-colors">Enterprise Syndicate</span>
-<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">High Stakes</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface group-hover:text-secondary transition-colors">Sindicação Corporativa</span>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Alto Risco</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
-              For public corporations, venture funds, and scaling unicorns needing dedicated PR strategy, crisis guardrails, and TV/podcast tours.
+              Para empresas de capital aberto, fundos de venture capital e unicórnios em expansão que precisam de estratégia de RP dedicada, proteção de crise e agendas de TV/podcast.
             </p>
 <div class="flex items-baseline gap-1 mb-space-lg">
-<span class="font-display text-headline-xl font-extrabold text-on-surface transition-all duration-300" id="price-enterprise">$2,499</span>
-<span class="text-on-surface-variant font-body-md font-medium transition-all duration-300" id="period-enterprise">/ mo retainers</span>
+<span class="font-display text-headline-xl font-extrabold text-on-surface transition-all duration-300" id="price-enterprise">$2.499</span>
+<span class="text-on-surface-variant font-body-md font-medium transition-all duration-300" id="period-enterprise">/ retenções mensais</span>
 </div>
 <div class="space-y-3 font-body-md text-body-md text-on-surface mb-space-lg">
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 font-bold">check</span>
-<span>Unlimited AI release generations + 4 Full Hybrid dispatches/mo</span>
+<span>Gerações ilimitadas de comunicados com IA + 4 envios híbridos completos/mês</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 font-bold">check</span>
-<span>Dedicated PR strategist on Slack / Teams</span>
+<span>Estrategista de RP dedicado no Slack / Teams</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 font-bold">check</span>
-<span>Bloomberg Terminal, Reuters &amp; WSJ executive pitching desk</span>
+<span>Mesa de pitching executivo no Bloomberg Terminal, Reuters e WSJ</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 font-bold">check</span>
-<span>Custom media training &amp; broadcast TV / podcast bookings</span>
+<span>Treinamento de mídia personalizado e reservas em TV aberta / podcast</span>
 </div>
 <div class="flex items-start gap-2">
 <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 font-bold">check</span>
-<span>SOC2 Type II &amp; strict NDA compliance controls</span>
+<span>SOC2 Tipo II e controles rigorosos de conformidade com NDA</span>
 </div>
 </div>
 </div>
 <a class="w-full py-3.5 rounded-full bg-surface-container hover:bg-secondary-fixed text-on-surface hover:text-on-secondary-fixed font-label-lg text-label-lg font-extrabold text-center transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95" data-path="book-consultation" href="#">
-            Speak to PR Strategist
+            Falar com Estrategista de RP
           </a>
 </div>
 </div>
@@ -830,35 +852,35 @@
 <div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary/25 blur-3xl pointer-events-none animate-pulse" style="animation-duration: 6s;"></div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
 <div class="lg:col-span-5">
-<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold uppercase tracking-wider shimmer-badge">Quantified Authority</span>
+<span class="px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-extrabold uppercase tracking-wider shimmer-badge">Autoridade Quantificada</span>
 <h2 class="font-headline-xl text-headline-xl font-extrabold mt-3 mb-space-sm text-white tracking-tight leading-snug">
-              Real Coverage. Real Traffic. Measured to the Dollar.
+              Cobertura Real. Tráfego Real. Medido ao Dólar.
             </h2>
 <p class="font-body-md text-body-md text-white/80 leading-relaxed">
-              We eliminate traditional public relations vanity metrics. Every release is measured by verified tier-1 clippings, reporter responses, high-authority backlinks, and estimated advertising value equivalency.
+              Eliminamos as métricas de vaidade tradicionais de relações públicas. Cada comunicado é medido por clippings Tier-1 verificados, respostas de repórteres, backlinks de alta autoridade e equivalência estimada de valor publicitário.
             </p>
 </div>
 <!-- Stat Counters 4-Cell Grid -->
 <div class="lg:col-span-7 grid grid-cols-2 gap-space-md">
 <div class="p-space-md rounded-3xl bg-white/10 backdrop-blur-md border border-white/10 shadow-inner hover:scale-105 hover:bg-white/15 transition-all duration-300">
-<div class="font-display text-headline-xl font-extrabold text-primary-fixed tracking-tight stat-number">14,200+</div>
-<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Releases Deployed</div>
-<div class="font-body-sm text-body-sm text-white/70">Across 82 countries worldwide</div>
+<div class="font-display text-headline-xl font-extrabold text-primary-fixed tracking-tight stat-number">14.200+</div>
+<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Comunicados Distribuídos</div>
+<div class="font-body-sm text-body-sm text-white/70">Em 82 países em todo o mundo</div>
 </div>
 <div class="p-space-md rounded-3xl bg-white/10 backdrop-blur-md border border-white/10 shadow-inner hover:scale-105 hover:bg-white/15 transition-all duration-300">
-<div class="font-display text-headline-xl font-extrabold text-secondary-fixed-dim tracking-tight stat-number">98.4%</div>
-<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Syndication Acceptance</div>
-<div class="font-body-sm text-body-sm text-white/70">Passed editorial newsroom review</div>
+<div class="font-display text-headline-xl font-extrabold text-secondary-fixed-dim tracking-tight stat-number">98,4%</div>
+<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Aceitação de Sindicação</div>
+<div class="font-body-sm text-body-sm text-white/70">Aprovado na revisão editorial de redação</div>
 </div>
 <div class="p-space-md rounded-3xl bg-white/10 backdrop-blur-md border border-white/10 shadow-inner hover:scale-105 hover:bg-white/15 transition-all duration-300">
-<div class="font-display text-headline-xl font-extrabold text-tertiary-fixed-dim tracking-tight stat-number">4.2 hrs</div>
-<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Average Turnaround</div>
-<div class="font-body-sm text-body-sm text-white/70">From draft submission to live wire</div>
+<div class="font-display text-headline-xl font-extrabold text-tertiary-fixed-dim tracking-tight stat-number">4,2 hrs</div>
+<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Prazo Médio</div>
+<div class="font-body-sm text-body-sm text-white/70">Do envio do rascunho ao fio ao vivo</div>
 </div>
 <div class="p-space-md rounded-3xl bg-white/10 backdrop-blur-md border border-white/10 shadow-inner hover:scale-105 hover:bg-white/15 transition-all duration-300">
-<div class="font-display text-headline-xl font-extrabold text-primary-fixed-dim tracking-tight stat-number">$42M+</div>
-<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Media Value (EAV)</div>
-<div class="font-body-sm text-body-sm text-white/70">Delivered to tech &amp; corporate clients</div>
+<div class="font-display text-headline-xl font-extrabold text-primary-fixed-dim tracking-tight stat-number">US$ 42M+</div>
+<div class="font-label-lg text-label-lg font-extrabold text-white mt-1">Valor de Mídia (EAV)</div>
+<div class="font-body-sm text-body-sm text-white/70">Entregue a clientes de tecnologia e corporativos</div>
 </div>
 </div>
 </div>
@@ -867,8 +889,8 @@
 <div class="flex items-center gap-space-sm">
 <img class="w-12 h-12 rounded-full object-cover shadow ring-2 ring-primary-fixed hover:scale-110 transition-transform duration-300" data-alt="Portrait of VP of Communications at a high growth enterprise software unicorn, sharp suit in glass conference room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh0Gmr_WbV2ZTUqYKc70WO8KNl-qO19rGlpIZ434AuXnL00H-H78wudDDH4rNNofHBuRQKo39rae-iSL5lHAuIbOVTU393a7iZHFa7nqxJ6cjRnzGRABmPW9SPnlYKjK3HMSQt_6CErexe83BVd8dWdGKvbb3M4z4S-WzFLjvQv-nGqY-vGRUkD4Yei_hPfsM7kFpAWOlxzOBA8rfGDtOzPuogHV4EwuzYRDG9Lv2PRWn12rSknH49bA"/>
 <div>
-<p class="font-body-md text-body-md text-white italic">"PRPulse replaced our legacy wire service and a bloated PR agency retainer. We landed Bloomberg and Reuters within 6 hours of publishing."</p>
-<span class="font-label-sm text-label-sm text-primary-fixed font-semibold">Elena Rostova — VP Global Communications, CloudStack Systems</span>
+<p class="font-body-md text-body-md text-white italic">"O PRPulse substituiu nosso serviço de fio legado e uma retenção inchada de agência de RP. Conseguimos Bloomberg e Reuters em 6 horas após a publicação."</p>
+<span class="font-label-sm text-label-sm text-primary-fixed font-semibold">Elena Rostova — VP de Comunicações Globais, CloudStack Systems</span>
 </div>
 </div>
 <div class="flex items-center gap-1 text-primary-fixed">
@@ -890,29 +912,29 @@
 <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-primary/25 blur-3xl animate-pulse" style="animation-duration: 7s;"></div>
 <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-secondary/25 blur-3xl animate-pulse" style="animation-duration: 9s;"></div>
 <div class="relative z-10 max-w-3xl mx-auto text-center">
-<span class="px-4 py-1.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-label-sm text-label-sm font-extrabold uppercase tracking-wider shadow-md shimmer-badge">Instant Angle Generator</span>
+<span class="px-4 py-1.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-label-sm text-label-sm font-extrabold uppercase tracking-wider shadow-md shimmer-badge">Gerador Instantâneo de Ângulos</span>
 <h2 class="font-headline-xl text-headline-xl font-extrabold text-white mt-space-xs mb-space-sm tracking-tight leading-snug">
-            Ready to amplify your next announcement?
+            Pronto para amplificar seu próximo anúncio?
           </h2>
 <p class="font-body-lg text-body-lg text-white/80 mb-space-xl leading-relaxed">
-            Input your announcement notes or company URL. Our fine-tuned AI will instantly construct 3 high-impact news angles ready for senior editor review.
+            Insira suas notas do anúncio ou URL da empresa. Nossa IA refinada construirá instantaneamente 3 ângulos de notícia de alto impacto prontos para revisão do editor sênior.
           </p>
 <!-- Interactive Input Form -->
 <div class="p-2.5 rounded-full bg-white/10 backdrop-blur-md shadow-2xl mb-space-md border border-white/15 hover:border-white/30 transition-all">
 <form class="flex flex-col sm:flex-row gap-2" id="angle-generator-form" onsubmit="handleAngleGenerate(event)">
 <div class="relative flex-1">
 <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">link</span>
-<input class="w-full pl-12 pr-4 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="https://yourcompany.com or paste funding / product notes..." required="" type="text"/>
+<input class="w-full pl-12 pr-4 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" placeholder="https://suaempresa.com ou cole notas de financiamento / produto..." required="" type="text"/>
 </div>
 <button class="px-7 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-95 text-white font-label-lg text-label-lg font-extrabold shadow-lg shadow-primary/30 transition-all duration-200 flex items-center justify-center gap-2 shrink-0 hover:scale-105 active:scale-95 btn-pulse-glow" id="btn-generate-submit" type="submit">
-<span id="btn-generate-text">Generate Instant News Angle</span>
+<span id="btn-generate-text">Gerar Ângulo de Notícia Instantâneo</span>
 <span class="material-symbols-outlined text-[18px]" id="btn-generate-icon">auto_awesome</span>
 </button>
 </form>
 </div>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-space-md text-white/80 font-label-sm text-label-sm">
 <a class="hover:text-primary-fixed transition-colors underline decoration-primary font-bold hover:translate-x-1 duration-200" data-path="book-consultation" href="#">
-              Or schedule a confidential 1-on-1 consultation with a Senior PR Director →
+              Ou agende uma consulta confidencial 1-a-1 com um Diretor Sênior de RP →
             </a>
 </div>
 </div>
@@ -929,17 +951,17 @@
     const btnIcon = document.getElementById('btn-generate-icon');
 
     if (btn && btnText && btnIcon) {
-      btnText.textContent = 'Synthesizing Angles...';
+      btnText.textContent = 'Sintetizando Ângulos...';
       btnIcon.textContent = 'hourglass_empty';
       btnIcon.classList.add('animate-spin');
 
       setTimeout(() => {
-        btnText.textContent = 'Angles Dispatched!';
+        btnText.textContent = 'Ângulos Enviados!';
         btnIcon.textContent = 'check_circle';
         btnIcon.classList.remove('animate-spin');
-        alert('✨ 3 high-impact news angles generated! A Senior PR strategist will follow up within 15 minutes with initial newsroom matches.');
+        alert('✨ 3 ângulos de notícia de alto impacto gerados! Um estrategista sênior de RP entrará em contato em até 15 minutos com correspondências iniciais de redação.');
         setTimeout(() => {
-          btnText.textContent = 'Generate Instant News Angle';
+          btnText.textContent = 'Gerar Ângulo de Notícia Instantâneo';
           btnIcon.textContent = 'auto_awesome';
         }, 3000);
       }, 1000);
@@ -999,13 +1021,13 @@
         btnRetainer.className = 'px-space-md py-2 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all duration-300 flex items-center gap-1.5 font-bold cursor-pointer';
         
         animatePriceChange(priceStarter, '$299');
-        animatePriceChange(periodStarter, '/ single release');
+        animatePriceChange(periodStarter, '/ comunicado único');
         
         animatePriceChange(pricePro, '$799');
-        animatePriceChange(periodPro, '/ single release');
+        animatePriceChange(periodPro, '/ comunicado único');
         
-        animatePriceChange(priceEnterprise, '$2,499');
-        animatePriceChange(periodEnterprise, '/ mo retainers');
+        animatePriceChange(priceEnterprise, '$2.499');
+        animatePriceChange(periodEnterprise, '/ retenções mensais');
       });
 
       btnRetainer.addEventListener('click', () => {
@@ -1013,57 +1035,57 @@
         btnPerRelease.className = 'px-space-md py-2 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all duration-300 font-bold cursor-pointer';
         
         animatePriceChange(priceStarter, '$239');
-        animatePriceChange(periodStarter, '/ release (billed quarterly)');
+        animatePriceChange(periodStarter, '/ comunicado (cobrado trimestralmente)');
         
         animatePriceChange(pricePro, '$639');
-        animatePriceChange(periodPro, '/ release (billed quarterly)');
+        animatePriceChange(periodPro, '/ comunicado (cobrado trimestralmente)');
         
-        animatePriceChange(priceEnterprise, '$1,999');
-        animatePriceChange(periodEnterprise, '/ mo (billed quarterly)');
+        animatePriceChange(priceEnterprise, '$1.999');
+        animatePriceChange(periodEnterprise, '/ mês (cobrado trimestralmente)');
       });
     }
 
     // Interactive Journalist Network Category Filter Tabs with dynamic data updates
     const filterData = {
       all: {
-        outlets: '420+ Major Outlets',
+        outlets: 'Mais de 420 Veículos Principais',
         width: '88%',
-        row1Title: 'Silicon Valley / AI Beat',
-        row1Count: '12,400 Verified Inboxes',
-        row2Title: 'Fintech & Crypto Markets',
-        row2Count: '8,900 Verified Inboxes'
+        row1Title: 'Vale do Silício / Pauta de IA',
+        row1Count: '12.400 Caixas Verificadas',
+        row2Title: 'Mercados Fintech e Cripto',
+        row2Count: '8.900 Caixas Verificadas'
       },
       tech: {
-        outlets: '280+ Tech Outlets',
+        outlets: 'Mais de 280 Veículos de Tecnologia',
         width: '94%',
-        row1Title: 'AI & Machine Learning Desks',
-        row1Count: '16,200 Verified Inboxes',
-        row2Title: 'Semiconductors & Deep Hardware',
-        row2Count: '7,400 Verified Inboxes'
+        row1Title: 'Mesas de IA e Aprendizado de Máquina',
+        row1Count: '16.200 Caixas Verificadas',
+        row2Title: 'Semicondutores e Hardware Profundo',
+        row2Count: '7.400 Caixas Verificadas'
       },
       fintech: {
-        outlets: '190+ Financial Wires',
+        outlets: 'Mais de 190 Fios Financeiros',
         width: '82%',
-        row1Title: 'Wall Street & VC Desks',
-        row1Count: '9,800 Verified Inboxes',
-        row2Title: 'Banking & Crypto Desks',
-        row2Count: '8,100 Verified Inboxes'
+        row1Title: 'Mesas de Wall Street e VC',
+        row1Count: '9.800 Caixas Verificadas',
+        row2Title: 'Mesas de Bancos e Cripto',
+        row2Count: '8.100 Caixas Verificadas'
       },
       healthcare: {
-        outlets: '145+ BioTech Outlets',
+        outlets: 'Mais de 145 Veículos de Biotecnologia',
         width: '78%',
-        row1Title: 'Clinical Trials & MedTech',
-        row1Count: '6,300 Verified Inboxes',
-        row2Title: 'Healthcare VC & FDA Beat',
-        row2Count: '5,200 Verified Inboxes'
+        row1Title: 'Ensaios Clínicos e MedTech',
+        row1Count: '6.300 Caixas Verificadas',
+        row2Title: 'VC de Saúde e Pauta FDA',
+        row2Count: '5.200 Caixas Verificadas'
       },
       cloud: {
-        outlets: '210+ Enterprise Outlets',
+        outlets: 'Mais de 210 Veículos Corporativos',
         width: '91%',
-        row1Title: 'B2B SaaS & DevTools Desks',
-        row1Count: '11,300 Verified Inboxes',
-        row2Title: 'Cybersecurity & Infra Beats',
-        row2Count: '8,400 Verified Inboxes'
+        row1Title: 'Mesas de B2B SaaS e DevTools',
+        row1Count: '11.300 Caixas Verificadas',
+        row2Title: 'Pautas de Cibersegurança e Infra',
+        row2Count: '8.400 Caixas Verificadas'
       }
     };
 
@@ -1097,4 +1119,4 @@
       });
     }
   });
-</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-space-3xl pb-space-2xl"><div class="max-w-container-max mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl border-b border-outline-variant/30"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs group cursor-pointer"><div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white shadow-md shadow-primary/30 group-hover:scale-110 group-hover:rotate-6 transition-transform"><span class="material-symbols-outlined text-[20px]">cell_tower</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-extrabold group-hover:text-primary transition-colors">PRPulse<span class="text-primary">.ai</span></span></div><p class="font-body-md text-body-md text-on-surface-variant pr-space-xl leading-relaxed">Algorithmic velocity coupled with veteran editorial oversight. Engineered for global corporate communications, VC portfolios, and enterprise PR syndication.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-low border border-primary-fixed hover:bg-primary-fixed/20 transition-colors"><span class="material-symbols-outlined text-[16px] text-primary">verified_user</span><span class="font-label-sm text-label-sm text-on-surface font-bold">SOC2 Type II</span></div><div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-low border border-secondary-fixed hover:bg-secondary-fixed/20 transition-colors"><span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span><span class="font-label-sm text-label-sm text-on-surface font-bold">ISO/IEC 27001</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-extrabold">Product &amp; Engine</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="platform-and-workflow" href="#">Autonomous Pitching</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="ai-human-synergy" href="#">Editor Copilot Suite</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Global Wire Syndication</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="results" href="#">Sentiment &amp; Reach Analytics</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="service-tiers" href="#">Enterprise Integrations</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-extrabold">Media Network</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Tier-1 Financial Desk</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Trade &amp; DeepTech Wires</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Journalist Direct Registry</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="editorial-standards" href="#">Editorial Standards &amp; Ethics</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="results" href="#">Case Studies</a></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-extrabold">The Editorial Dispatch</span><p class="font-body-sm text-body-sm text-on-surface-variant">Bi-weekly executive intelligence on AI synthesis in journalism, algorithmic news discovery, and tier-1 media relations.</p><form class="flex items-center gap-space-xs mt-space-2xs" onsubmit="event.preventDefault(); alert('Subscribed to The Editorial Dispatch.');"><input class="w-full px-space-md py-2.5 rounded-full bg-surface border border-outline-variant font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary transition-colors" placeholder="executive@enterprise.com" required="" type="email"/><button class="px-5 py-2.5 rounded-full bg-primary text-white font-label-md text-label-md font-extrabold hover:bg-primary-container transition-all shrink-0 shadow-md shadow-primary/25 hover:scale-105 active:scale-95" type="submit">Subscribe</button></form><span class="font-label-sm text-label-sm text-on-surface-variant">Protected by multi-tier encryption. Unsubscribe anytime.</span></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 PRPulse.ai Systems Inc. All rights reserved. Precision PR syndication engine.</div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="security" href="#">Trust &amp; Security</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="editorial-standards" href="#">Editorial Standards</a></div></div></div></footer><script>gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!prefersReducedMotion){gsap.from('header',{y:-50,opacity:0,duration:0.8,ease:'power3.out'});gsap.from('.hero-badge',{scale:0,opacity:0,duration:0.6,delay:0.2,ease:'back.out(1.7)'});gsap.from('h1',{y:40,opacity:0,duration:0.8,delay:0.3,ease:'power3.out'});gsap.from('.hero-cta',{y:30,opacity:0,duration:0.6,delay:0.5,ease:'power2.out'});gsap.from('.hero-trust',{y:20,opacity:0,stagger:0.1,duration:0.5,delay:0.7,ease:'power2.out'});gsap.from('.interactive-card',{y:50,opacity:0,stagger:0.15,scrollTrigger:{trigger:'.interactive-card',start:'top 85%',toggleActions:'play none none reverse'},duration:0.7,ease:'power3.out'});gsap.from('.stat-number',{textContent:0,duration:2,ease:'power1.out',snap:{textContent:1},stagger:0.2,scrollTrigger:{trigger:'.stat-number',start:'top 80%'},onUpdate:function(){this.targets().forEach(function(el){el.textContent=Math.ceil(el.textContent)})}});gsap.to('.gradient-blob',{rotation:360,duration:20,repeat:-1,ease:'none'});document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target){gsap.to(window,{scrollTo:{y:target,offsetY:80},duration:1,ease:'power2.inOut'})}})})};</script></body></html>
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-space-3xl pb-space-2xl"><div class="max-w-container-max mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl border-b border-outline-variant/30"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs group cursor-pointer"><div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white shadow-md shadow-primary/30 group-hover:scale-110 group-hover:rotate-6 transition-transform"><span class="material-symbols-outlined text-[20px]">cell_tower</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-extrabold group-hover:text-primary transition-colors">PRPulse<span class="text-primary">.ai</span></span></div><p class="font-body-md text-body-md text-on-surface-variant pr-space-xl leading-relaxed">Velocidade algorítmica combinada com supervisão editorial veterana. Projetado para comunicações corporativas globais, carteiras de venture capital e sindicação de RP corporativa.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-low border border-primary-fixed hover:bg-primary-fixed/20 transition-colors"><span class="material-symbols-outlined text-[16px] text-primary">verified_user</span><span class="font-label-sm text-label-sm text-on-surface font-bold">SOC2 Type II</span></div><div class="flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-container-low border border-secondary-fixed hover:bg-secondary-fixed/20 transition-colors"><span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span><span class="font-label-sm text-label-sm text-on-surface font-bold">ISO/IEC 27001</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-extrabold">Produto e Motor</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="platform-and-workflow" href="#">Pitching Autônomo</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="ai-human-synergy" href="#">Suíte Copiloto Editorial</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Sindicação Global em Fio</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="results" href="#">Análise de Sentimento e Alcance</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="service-tiers" href="#">Integrações Corporativas</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-extrabold">Rede de Mídia</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Mesa Financeira Tier-1</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Fios de Setor e DeepTech</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="media-network" href="#">Registro Direto de Jornalistas</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="editorial-standards" href="#">Padrões e Ética Editorial</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200 font-medium" data-path="results" href="#">Estudos de Caso</a></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-extrabold">O Despacho Editorial</span><p class="font-body-sm text-body-sm text-on-surface-variant">Inteligência executiva quinzenal sobre síntese de IA no jornalismo, descoberta algorítmica de notícias e relações com mídia Tier-1.</p><form class="flex items-center gap-space-xs mt-space-2xs" onsubmit="event.preventDefault(); alert('Inscrição no The Editorial Dispatch confirmada.');"><input class="w-full px-space-md py-2.5 rounded-full bg-surface border border-outline-variant font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary transition-colors" placeholder="executivo@empresa.com" required="" type="email"/><button class="px-5 py-2.5 rounded-full bg-primary text-white font-label-md text-label-md font-extrabold hover:bg-primary-container transition-all shrink-0 shadow-md shadow-primary/25 hover:scale-105 active:scale-95" type="submit">Assinar</button></form><span class="font-label-sm text-label-sm text-on-surface-variant">Protegido por criptografia em múltiplas camadas. Cancele a assinatura a qualquer momento.</span></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 PRPulse.ai Systems Inc. Todos os direitos reservados. Motor de sindicação de RP de precisão.</div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Política de Privacidade</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Termos de Serviço</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="security" href="#">Confiança e Segurança</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="editorial-standards" href="#">Padrões Editoriais</a></div></div></div></footer><script>gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!prefersReducedMotion){gsap.from('header',{y:-50,opacity:0,duration:0.8,ease:'power3.out'});gsap.from('.hero-badge',{scale:0,opacity:0,duration:0.6,delay:0.2,ease:'back.out(1.7)'});gsap.from('h1',{y:40,opacity:0,duration:0.8,delay:0.3,ease:'power3.out'});gsap.from('.hero-cta',{y:30,opacity:0,duration:0.6,delay:0.5,ease:'power2.out'});gsap.from('.hero-trust',{y:20,opacity:0,stagger:0.1,duration:0.5,delay:0.7,ease:'power2.out'});gsap.from('.interactive-card',{y:50,opacity:0,stagger:0.15,scrollTrigger:{trigger:'.interactive-card',start:'top 85%',toggleActions:'play none none reverse'},duration:0.7,ease:'power3.out'});gsap.from('.stat-number',{textContent:0,duration:2,ease:'power1.out',snap:{textContent:1},stagger:0.2,scrollTrigger:{trigger:'.stat-number',start:'top 80%'},onUpdate:function(){this.targets().forEach(function(el){el.textContent=Math.ceil(el.textContent)})}});gsap.to('.gradient-blob',{rotation:360,duration:20,repeat:-1,ease:'none'});document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target){gsap.to(window,{scrollTo:{y:target,offsetY:80},duration:1,ease:'power2.inOut'})}})})};</script></body></html>
